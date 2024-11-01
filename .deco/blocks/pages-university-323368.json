@@ -1,6 +1,6 @@
 {
-  "name": "Home",
-  "path": "/",
+  "name": "university",
+  "path": "/example-university",
   "sections": [
     {
       "__resolveType": "site/sections/Header.tsx",
@@ -30,28 +30,44 @@
       }
     },
     {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p><span>Faça seu curso<br></span><span style=\"color: #27ae6b\">desenhar a web</span></p>",
-      "cta": [
+      "__resolveType": "site/sections/HeroForm.tsx",
+      "placement": "right",
+      "social": [
         {
-          "href": "#",
-          "text": "Se inscrever com e-mail do seu curso"
+          "network": "Facebook",
+          "href": "#"
+        },
+        {
+          "network": "Instagram",
+          "href": "#"
+        },
+        {
+          "network": "Linkedin",
+          "href": "#"
+        },
+        {
+          "network": "X - Twitter",
+          "href": "#"
         }
       ],
-      "description": "Cadastre-se até XX/XX e ganhe 1 mês de Webdraw Pro Consiga 500 sign-ups do seu curso e ganhe um ano gratuito!",
-      "placement": "right"
+      "title": "<p>Agora só<br><span style=\"color: rgb(39, 174, 107)\">compartilhar</span></p>",
+      "description": "Vamos enviar por e-mail instruções sobre como resgatar suas recompensas.",
+      "shareLink": "https://webdraw.ai/am452-sdc"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/cards.tsx",
-        "title": "COMO FUNCIONA?"
+        "__resolveType": "site/sections/NewSection.tsx",
+        "score": 1230,
+        "total": 500,
+        "university": "Harvard University",
+        "referralCount": 1
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/referrals.tsx"
+        "__resolveType": "site/sections/Prizes.tsx"
       }
     },
     {
