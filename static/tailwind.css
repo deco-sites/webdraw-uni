@@ -2078,19 +2078,6 @@ details.collapse summary::-webkit-details-marker {
   outline-offset: 2px;
   outline-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
-<<<<<<< Updated upstream
-.input-primary {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
-}
-.input-primary:focus,
-    .input-primary:focus-within {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
-  outline-color: var(--fallback-p,oklch(var(--p)/1));
-}
-=======
->>>>>>> Stashed changes
 .input-disabled,
   .input:disabled,
   .input[disabled] {
@@ -2962,13 +2949,6 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-<<<<<<< Updated upstream
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-=======
->>>>>>> Stashed changes
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -2990,24 +2970,15 @@ details.collapse summary::-webkit-details-marker {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
-<<<<<<< Updated upstream
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-=======
->>>>>>> Stashed changes
 .ml-1 {
   margin-left: 0.25rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
 }
-<<<<<<< Updated upstream
-=======
 .ml-8 {
   margin-left: 2rem;
 }
->>>>>>> Stashed changes
 .ml-auto {
   margin-left: auto;
 }
@@ -3017,12 +2988,9 @@ details.collapse summary::-webkit-details-marker {
 .mr-3 {
   margin-right: 0.75rem;
 }
-<<<<<<< Updated upstream
-=======
 .mr-8 {
   margin-right: 2rem;
 }
->>>>>>> Stashed changes
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -3256,15 +3224,6 @@ details.collapse summary::-webkit-details-marker {
 .max-w-sm {
   max-width: 24rem;
 }
-<<<<<<< Updated upstream
-.flex-auto {
-  flex: 1 1 auto;
-}
-.flex-none {
-  flex: none;
-}
-=======
->>>>>>> Stashed changes
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -3333,12 +3292,9 @@ details.collapse summary::-webkit-details-marker {
 .flex-nowrap {
   flex-wrap: nowrap;
 }
-<<<<<<< Updated upstream
-=======
 .content-center {
   align-content: center;
 }
->>>>>>> Stashed changes
 .items-start {
   align-items: flex-start;
 }
@@ -3360,12 +3316,6 @@ details.collapse summary::-webkit-details-marker {
 .gap-1 {
   gap: 0.25rem;
 }
-<<<<<<< Updated upstream
-.gap-10 {
-  gap: 2.5rem;
-}
-=======
->>>>>>> Stashed changes
 .gap-12 {
   gap: 3rem;
 }
@@ -3441,12 +3391,9 @@ details.collapse summary::-webkit-details-marker {
 .overflow-x-auto {
   overflow-x: auto;
 }
-<<<<<<< Updated upstream
-=======
 .overflow-x-hidden {
   overflow-x: hidden;
 }
->>>>>>> Stashed changes
 .overflow-y-hidden {
   overflow-y: hidden;
 }
@@ -3536,12 +3483,6 @@ details.collapse summary::-webkit-details-marker {
 .border-2 {
   border-width: 2px;
 }
-<<<<<<< Updated upstream
-.border-b {
-  border-bottom-width: 1px;
-}
-=======
->>>>>>> Stashed changes
 .border-t {
   border-top-width: 1px;
 }
@@ -3564,13 +3505,10 @@ details.collapse summary::-webkit-details-marker {
 .border-transparent {
   border-color: transparent;
 }
-<<<<<<< Updated upstream
-=======
 .bg-\[\#02F67C\] {
   --tw-bg-opacity: 1;
   background-color: rgb(2 246 124 / var(--tw-bg-opacity));
 }
->>>>>>> Stashed changes
 .bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
@@ -3660,8 +3598,6 @@ details.collapse summary::-webkit-details-marker {
 .p-8 {
   padding: 2rem;
 }
-<<<<<<< Updated upstream
-=======
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -3670,7 +3606,6 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 3rem;
   padding-right: 3rem;
 }
->>>>>>> Stashed changes
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3691,13 +3626,10 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 12px;
   padding-right: 12px;
 }
-<<<<<<< Updated upstream
-=======
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
 }
->>>>>>> Stashed changes
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -3722,13 +3654,10 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-<<<<<<< Updated upstream
-=======
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
->>>>>>> Stashed changes
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -3820,12 +3749,9 @@ details.collapse summary::-webkit-details-marker {
 .text-\[24px\] {
   font-size: 24px;
 }
-<<<<<<< Updated upstream
-=======
 .text-\[32px\] {
   font-size: 32px;
 }
->>>>>>> Stashed changes
 .text-\[48px\] {
   font-size: 48px;
 }
@@ -3909,12 +3835,6 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[22px\] {
   line-height: 22px;
 }
-<<<<<<< Updated upstream
-.leading-none {
-  line-height: 1;
-}
-=======
->>>>>>> Stashed changes
 .leading-normal {
   line-height: 1.5;
 }
@@ -4096,52 +4016,6 @@ details.collapse summary::-webkit-details-marker {
     }
   }
 }
-<<<<<<< Updated upstream
-@media (min-width: 1280px) {
-
-  .xl\:container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @media (min-width: 640px) {
-
-    .xl\:container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-
-    .xl\:container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-
-    .xl\:container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-
-    .xl\:container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-
-    .xl\:container {
-      max-width: 1536px;
-    }
-  }
-}
-=======
->>>>>>> Stashed changes
 .hover\:rotate-\[-3deg\]:hover {
   --tw-rotate: -3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4161,13 +4035,6 @@ details.collapse summary::-webkit-details-marker {
 .disabled\:hidden:disabled {
   display: none;
 }
-<<<<<<< Updated upstream
-.group[open] .group-open\:rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-=======
->>>>>>> Stashed changes
 .group[open] .group-open\:border-b-\[4px\] {
   border-bottom-width: 4px;
 }
@@ -4251,14 +4118,6 @@ details.collapse summary::-webkit-details-marker {
 }
 @media (min-width: 768px) {
 
-<<<<<<< Updated upstream
-  .md\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -4267,13 +4126,10 @@ details.collapse summary::-webkit-details-marker {
     max-width: 72rem;
   }
 
-<<<<<<< Updated upstream
-=======
   .md\:max-w-full {
     max-width: 100%;
   }
 
->>>>>>> Stashed changes
   .md\:max-w-xl {
     max-width: 36rem;
   }
@@ -4300,8 +4156,6 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
-<<<<<<< Updated upstream
-=======
   .md\:rounded-full {
     border-radius: 9999px;
   }
@@ -4328,7 +4182,6 @@ details.collapse summary::-webkit-details-marker {
     font-size: 64px;
   }
 
->>>>>>> Stashed changes
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -4366,17 +4219,6 @@ details.collapse summary::-webkit-details-marker {
     width: 50%;
   }
 
-<<<<<<< Updated upstream
-  .lg\:w-2\/5 {
-    width: 40%;
-  }
-
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-
-=======
->>>>>>> Stashed changes
   .lg\:w-full {
     width: 100%;
   }
@@ -4385,13 +4227,6 @@ details.collapse summary::-webkit-details-marker {
     max-width: 48rem;
   }
 
-<<<<<<< Updated upstream
-  .lg\:max-w-xl {
-    max-width: 36rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .lg\:flex-\[100px\] {
     flex: 100px;
   }
@@ -4416,25 +4251,10 @@ details.collapse summary::-webkit-details-marker {
     justify-content: center;
   }
 
-<<<<<<< Updated upstream
-  .lg\:gap-20 {
-    gap: 5rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .lg\:gap-6 {
     gap: 1.5rem;
   }
 
-<<<<<<< Updated upstream
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-=======
->>>>>>> Stashed changes
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -4450,14 +4270,6 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 7rem;
   }
 
-<<<<<<< Updated upstream
-  .lg\:py-36 {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -4474,13 +4286,3 @@ details.collapse summary::-webkit-details-marker {
     font-size: 80px;
   }
 }
-<<<<<<< Updated upstream
-@media (min-width: 1280px) {
-
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-=======
->>>>>>> Stashed changes
