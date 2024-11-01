@@ -1,1 +1,13 @@
-{"__resolveType":"site/sections/Faq.tsx"}
+{
+  "__resolveType": "site/sections/Faq.tsx",
+  "titlePosition": "aside",
+  "questions": [
+    {
+      "title": "Como faço para participar da promoção?",
+      "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+    }
+  ],
+  "title": "FAQ",
+  "subtitle": "FAQ",
+  "description": "Tire todas as suas dúvidas"
+}

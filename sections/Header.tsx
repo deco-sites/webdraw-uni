@@ -2,6 +2,12 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 
+export interface Logo {
+  src?: ImageWidget;
+  /** @description text alternative */
+  alt?: string;
+}
+
 export interface CTA {
   id?: string;
   href: string;
@@ -10,12 +16,9 @@ export interface CTA {
 }
 
 export interface Nav {
-  logo?: {
-    src?: ImageWidget;
-    alt?: string;
-  };
+  logo?: Logo;
   navigation?: {
-    links: {
+    rightLinks: {
       label?: string;
       url?: string;
     }[];
@@ -25,15 +28,14 @@ export interface Nav {
 
 export default function Header({
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
     alt: "Logo",
   },
   navigation = {
-    links: [
+    rightLinks: [
       { label: "Home", url: "/" },
       { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
+      { label: "Pricing", url: "/" },
       { label: "Contact", url: "/" },
     ],
     buttons: [
@@ -43,57 +45,65 @@ export default function Header({
   },
 }: Nav) {
   return (
-    <nav class="drawer drawer-end">
+    <div class="drawer drawer-end">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
       {/* main content */}
-      <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
-        <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
-        </a>
+      <div class="px-0 py-0 md:py-6 md:px-16">
+        <div class="container drawer drawer-center md:rounded-full">
+          <div class="flex drawer-content items-center justify-between py-6">
+            <a href="/">
+              <div>
+                <Image
+                  src={logo.src || ""}
+                  width={32}
+                  height={32}
+                  alt={logo.alt || ""}
+                />
+              </div>
+            </a>
+            <div class="hidden items-center justify-between lg:flex w-full">
+              <ul class="flex justify-end flex-grow">
+                {navigation.rightLinks.map((link, index) => (
+                  <li key={`link-${index}`}>
+                    <a
+                      href={link.url}
+                      aria-label={link.label}
+                      class="link text-sm font-medium no-underline hover:underline p-3"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <ul class="flex gap-3 ml-8 mr-8">
+                {navigation.buttons?.map((item) => (
+                  <li key={item.id || item.text}>
+                    <a
+                      id={item.id}
+                      href={item.href}
+                      target={item.href.includes("http") ? "_blank" : "_self"}
+                      class={`font-bold btn btn-sm px-4 ${item.outline ? "btn-secondary" : "btn-primary text-white"}`}
+                    >
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        <div class="hidden items-center justify-between lg:flex w-full">
-          <ul class="flex">
-            {navigation.links.map((link) => (
-              <li>
-                <a
-                  href={link.url}
-                  aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ul class="flex gap-3">
-            {navigation.buttons?.map((item) => (
-              <a
-                key={item?.id}
-                id={item?.id}
-                href={item?.href ?? "#"}
-                target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
-                  item.outline && "btn-outline"
-                }`}
-              >
-                {item?.text}
-              </a>
-            ))}
-          </ul>
+            <label
+              htmlFor="mobile-drawer-nav"
+              class="flex lg:hidden btn btn-ghost drawer-button"
+            >
+              <Icon id="Bars3" size={24} strokeWidth={0.1} />
+            </label>
+          </div>
         </div>
-
-        <label
-          htmlFor="mobile-drawer-nav"
-          class="flex lg:hidden btn btn-ghost drawer-button"
-        >
-          <Icon id="Bars3" size={24} strokeWidth={0.1} />
-        </label>
       </div>
 
       {/* sidebar */}
-      <aside class="drawer-side z-50">
-        {/* Close when clicking on overlay */}
+      <div class="drawer-side z-50 overflow-x-hidden">
         <label
           htmlFor="mobile-drawer-nav"
           aria-label="close sidebar"
@@ -106,13 +116,13 @@ export default function Header({
               src={logo.src || ""}
               width={100}
               height={28}
-              alt={logo.alt}
+              alt={logo.alt || ""}
             />
           </a>
 
           <ul class="menu">
-            {navigation?.links.map((link) => (
-              <li>
+            {navigation.rightLinks.map((link, index) => (
+              <li key={`mobile-link-${index}`}>
                 <a href={link.url} aria-label={link.label}>
                   {link.label}
                 </a>
@@ -122,21 +132,20 @@ export default function Header({
 
           <ul class="p-4 flex items-center gap-3">
             {navigation.buttons?.map((item) => (
-              <a
-                key={item?.id}
-                id={item?.id}
-                href={item?.href ?? "#"}
-                target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
-                  item.outline && "btn-outline"
-                }`}
-              >
-                {item?.text}
-              </a>
+              <li key={item.id || item.text}>
+                <a
+                  id={item.id}
+                  href={item.href}
+                  target={item.href.includes("http") ? "_blank" : "_self"}
+                  class={`font-bold btn ${item.outline ? "btn-secondary" : "btn-primary text-white"}`}
+                >
+                  {item.text}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
-      </aside>
-    </nav>
+      </div>
+    </div>
   );
 }

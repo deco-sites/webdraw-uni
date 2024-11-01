@@ -1,42 +1,244 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header.tsx",
+      "navigation": {
+        "links": [],
+        "buttons": [
+          {
+            "href": "#",
+            "text": "about",
+            "outline": true
+          },
+          {
+            "href": "#",
+            "text": "Se inscrever"
+          }
+        ],
+        "leftLinks": [],
+        "rightLinks": [
+          {
+            "label": "Discord",
+            "url": "#"
+          }
+        ]
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+      "logo": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/webdraw-uni/d047bd5c-fa8d-4768-bd07-912be112e82c/d-logo-ouline.png"
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p><span>Faça seu curso<br></span><span style=\"color: #27ae6b\">desenhar a web</span></p>",
+      "cta": [
+        {
+          "href": "#",
+          "text": "Se inscrever com e-mail do seu curso"
+        }
+      ],
+      "description": "Cadastre-se até XX/XX e ganhe 1 mês de Webdraw Pro Consiga 500 sign-ups do seu curso e ganhe um ano gratuito!",
+      "placement": "right"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/cards.tsx",
+        "title": "COMO FUNCIONA?"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ImageWithParagraph.tsx"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "title": "FAQ",
+      "titlePosition": "aside",
+      "description": "Tire todas as suas dúvidas",
+      "questions": [
+        {
+          "title": "Como faço para participar da promoção?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        },
+        {
+          "title": "Posso participar sem um e-mail do curso?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        },
+        {
+          "title": "Quantos sign-ups curso precisa para ganhar o Webdraw Pro gratuito?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        },
+        {
+          "title": "Como funciona o programa de indicação?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        },
+        {
+          "title": "A promoção é válida para qualquer curso ou área?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        },
+        {
+          "title": "Como acompanho o progresso do meu curso?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        },
+        {
+          "title": "Quem posso contatar para mais informações?",
+          "answer": "<p>Basta se inscrever com o e-mail do seu curso e começar a explorar o Webdraw! Assim que você se registra, seu curso já conta com um sign-up.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Footer.tsx",
+      "links": [
+        {
+          "items": [
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            }
+          ],
+          "title": "Column five"
+        },
+        {
+          "items": [
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            }
+          ],
+          "title": "Column five"
+        },
+        {
+          "items": [
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            }
+          ],
+          "title": "Column five"
+        },
+        {
+          "items": [
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            }
+          ],
+          "title": "Column five"
+        },
+        {
+          "items": [
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            },
+            {
+              "label": "link",
+              "href": "#"
+            }
+          ],
+          "title": "Column five"
+        }
+      ],
+      "bottomLinks": [
+        {
+          "label": "Privacy Policy",
+          "href": "#"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "#"
+        },
+        {
+          "label": "Cookies Settings",
+          "href": "#"
+        }
+      ],
+      "social": [
+        {
+          "network": "Facebook",
+          "href": "#"
+        },
+        {
+          "network": "Instagram",
+          "href": "#"
+        },
+        {
+          "network": "X - Twitter",
+          "href": "#"
+        },
+        {
+          "network": "Linkedin",
+          "href": "#"
+        }
+      ],
+      "subscribe": {},
+      "logo": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/webdraw-uni/36355a22-bf58-48dc-97ec-fc76822e0189/deco.cx-logo-outline.png"
+      }
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
