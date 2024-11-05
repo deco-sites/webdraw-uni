@@ -14,20 +14,20 @@ export default function BlogPosts({
 }: Props) {
   return (
     <div
-      class="px-8 py-12"
+      class="flex justify-center px-8 py-24"
       style={{
         background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px"
       }}>
-      <div class="sm:px-2 bg-[#FAFAFA] rounded-3xl m-8">
-        <div class="flex flex-col text-left items-start justify-center justify-between py-12 gap-x-6">
-          <p class="pl-8 pb-4 text-4xl leading-snug font-bold">
+      <div style={{width: "fit-content"}} class="px-16 sm:px-2 bg-[#FAFAFA] rounded-3xl m-8">
+        <div style={{width: "fit-content"}} class="flex flex-col text-left items-center justify-center justify-between p-12 gap-x-6">
+          <p class="pl-4 pb-4 text-4xl leading-snug font-bold w-full">
             {title}
           </p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 p-4">
-            <div class="bg-white rounded-3xl px-8 py-12 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
+            <div class="bg-white border border-[#C9CFCF] rounded-3xl px-8 pt-12 pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
               <div class="px-6 pt-6 pb-2 space-y-4">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_4_407)">
@@ -48,10 +48,10 @@ export default function BlogPosts({
               </div>
               <div class="p-6 space-y-4">
                 <p class="text-4xl font-black">Passo 1</p>
-                <p class="teÎxt-base">Cadastre-se agora e ganhe 1 mês inteiro de acesso gratuito ao Webdraw Pro.</p>
+                <p class="text-base w-64">Cadastre-se agora e ganhe 1 mês inteiro de acesso gratuito ao Webdraw Pro.</p>
               </div>
             </div>
-            <div class="bg-white rounded-3xl px-8 py-12 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
+            <div class="bg-white border border-[#C9CFCF] rounded-3xl px-8 pt-12 pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
               <div class="px-6 pt-6 pb-2 space-y-4">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2781 38.088C19.9948 38.1808 20.7205 38.1808 21.4373 38.088C22.1361 37.9853 22.8235 37.8157 23.4898 37.5816C24.983 37.0125 26.4124 36.2888 27.7549 35.4224C27.956 35.3192 28.1099 35.1427 28.1843 34.9293C28.2587 34.7157 28.248 34.4819 28.1547 34.276C28.0469 34.0795 27.8701 33.9299 27.6584 33.856C27.4467 33.7821 27.2152 33.7893 27.0085 33.8763C25.5929 34.3731 24.14 34.7565 22.6635 35.0224C21.7827 35.2032 20.8928 35.3365 19.9978 35.4224H18.665C20.2206 33.3843 21.1554 30.9408 21.3573 28.3848C21.8904 23.0536 19.2514 17.7222 13.067 17.1891C11.0795 17.1773 9.11765 17.6376 7.34272 18.532C5.56781 19.4264 4.03059 20.7294 2.85752 22.3338C1.54722 23.8715 0.764965 25.789 0.625808 27.8043C0.486651 29.8197 0.997939 31.8267 2.08447 33.5296C2.77325 34.5547 3.68443 35.4112 4.75013 36.0355L5.76309 36.5685C3.71832 38.6592 2.16961 41.1827 1.23145 43.9525C0.531072 46.1 0.127487 48.3331 0.0318978 50.5899C-0.0871432 53.8819 0.127202 57.1776 0.671659 60.4264C0.678064 60.5469 0.7092 60.6648 0.763131 60.7728C0.817064 60.8808 0.892637 60.9765 0.985149 61.0539C1.07766 61.1315 1.18514 61.1891 1.30089 61.2232C1.41663 61.2576 1.53818 61.2675 1.65796 61.2528C1.87476 61.2259 2.07303 61.1171 2.2119 60.9483C2.35076 60.7797 2.41965 60.5643 2.40435 60.3464C2.2398 57.1627 2.33787 53.9709 2.69757 50.8032C2.93011 48.7741 3.33136 46.768 3.89712 44.8056C4.64293 42.0685 5.92005 39.5053 7.65573 37.2616C8.37547 37.4483 9.0952 37.6349 9.81493 37.768C10.0093 37.8069 10.2113 37.7669 10.3762 37.6571C10.5412 37.5472 10.6557 37.376 10.6946 37.1816C10.7335 36.9872 10.6935 36.7853 10.5835 36.6203C10.4736 36.4555 10.3026 36.3408 10.1081 36.3019C4.7768 35.0757 3.81715 32.5968 3.79051 32.5168C3.03272 31.1531 2.73496 29.5813 2.94147 28.0352C3.14797 26.4887 3.84768 25.0503 4.93675 23.9333C5.86776 22.6936 7.07579 21.6888 8.46432 20.9992C9.85285 20.3095 11.3834 19.9541 12.9338 19.9614C17.4921 20.228 19.3047 24.1998 19.0648 28.1451C19.0918 30.2083 18.434 32.2221 17.1944 33.8717C15.9548 35.5213 14.2033 36.7136 12.214 37.2616C11.9949 37.3008 11.7988 37.4216 11.6652 37.5997C11.5317 37.7779 11.4706 38 11.4943 38.2213C11.5335 38.4384 11.6554 38.632 11.8343 38.7613C12.0133 38.8907 12.2354 38.9453 12.4539 38.9144C13.8961 38.7072 15.2624 38.1387 16.4258 37.2616C17.3288 37.6811 18.2907 37.9597 19.2781 38.088Z" fill="#9900E6" />
@@ -65,10 +65,10 @@ export default function BlogPosts({
               </div>
               <div class="p-6 space-y-4">
                 <p class="text-4xl font-black">Passo 2</p>
-                <p class="text-base">Convide seus amigos para aumentar a pontuação do seu curso e concorrer a prêmios exclusivos.</p>
+                <p class="text-base w-64">Convide seus amigos para aumentar a pontuação do seu curso e concorrer a prêmios exclusivos.</p>
               </div>
             </div>
-            <div class="bg-white rounded-3xl px-8 py-12 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
+            <div class="bg-white border border-[#C9CFCF] rounded-3xl px-8 pt-12 pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
               <div class="px-6 pt-6 pb-2 space-y-4">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M58.3543 19.9734C57.1215 17.9599 55.1079 17.2202 49.6425 14.3849C35.548 9.00183 34.8495 8.34435 33.8223 9.20729C33.6942 9.33344 33.5925 9.48378 33.5233 9.64956C33.4537 9.81534 33.4183 9.99325 33.4183 10.1729C33.4183 10.3527 33.4537 10.5306 33.5233 10.6963C33.5925 10.8621 33.6942 11.0125 33.8223 11.1386C38.5135 13.6112 43.3587 15.7799 48.3278 17.6312C48.6565 17.8777 54.3682 22.028 54.6969 22.1102C55.0256 22.1924 40.1914 29.0958 39.4109 29.4246C38.2083 30.3085 36.7878 30.8484 35.3013 30.9861C34.9319 30.9861 15.1665 24.0005 13.4403 22.7677C14.9609 21.9869 7.85215 26.4249 28.7267 13.1932C29.0006 13.0326 29.202 12.7726 29.2889 12.4672C29.3762 12.1618 29.3416 11.8346 29.1934 11.5538C29.0451 11.2731 28.7943 11.0604 28.4928 10.96C28.1917 10.8597 27.863 10.8795 27.5764 11.0153L15.0021 17.3435C11.4271 18.9872 6.78377 21.2062 9.45472 24.2881C8.83445 30.0741 8.68329 35.9008 9.00249 41.7111C7.9234 42.0171 6.9444 42.6025 6.16432 43.4082C5.38384 44.2139 4.83029 45.2114 4.55928 46.2997C4.28828 47.388 4.30928 48.5286 4.62065 49.6063C4.93202 50.6838 5.52223 51.6599 6.33154 52.4363C9.61905 56.0524 16.358 55.8057 17.7143 50.7925C18.005 49.867 18.1014 48.8916 17.9968 47.9272C17.8922 46.9628 17.5895 46.0306 17.1068 45.189C16.6245 44.3476 15.9729 43.6151 15.1932 43.0377C14.414 42.4603 13.5231 42.0507 12.5775 41.8344C13.3711 36.9721 13.5367 32.028 13.0709 27.1234C15.2896 28.3562 19.2756 29.8355 28.3981 33.4516C30.3293 34.1091 33.74 36.6568 36.2877 35.7938C43.8698 32.7286 51.1474 28.9591 58.0256 24.5346C58.5907 23.9249 58.9309 23.1409 58.9906 22.3118C59.0503 21.4826 58.8258 20.6579 58.3543 19.9734ZM13.4403 45.3272C14.5499 46.6833 14.0981 50.998 12.2076 51.08C10.3176 51.1624 8.09844 47.8339 8.55067 46.108C9.41353 43.0672 13.1529 44.9985 13.4403 45.3272Z" fill="#76CAD0" />
@@ -77,7 +77,7 @@ export default function BlogPosts({
               </div>
               <div class="p-6 space-y-4">
                 <p class="text-4xl font-black">Passo 3</p>
-                <p class="text-base">Com 500 sign-ups, seu curso desbloqueia um ano de acesso grátis ao Webdraw Pro!</p>
+                <p class="text-base w-64">Com 500 sign-ups, seu curso desbloqueia um ano de acesso grátis ao Webdraw Pro!</p>
               </div>
             </div>
           </div>

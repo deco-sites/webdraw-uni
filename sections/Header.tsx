@@ -51,7 +51,7 @@ export default function Header({
         background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
-        backgroundPosition: "-19px 0px",
+        backgroundPosition: "-19px 15px",
       }}
       class="drawer drawer-end">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />

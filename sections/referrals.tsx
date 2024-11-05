@@ -24,18 +24,25 @@ const Referrals: FunctionalComponent<Props> = ({
   ],
 }) => {
   return (
-    <div class="max-w-full mx-16 p-8">
+    <div 
+    style={{
+      background: "white",
+      backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
+      backgroundSize: "30px 30px",
+      backgroundPosition: "-19px 0px",
+    }} 
+    class="max-w-full p-8">
       <h2 class="text-5xl font-bold mb-6 text-center text-gray-800">Referrals</h2>
-      <div class="space-y-4">
+      <div class="space-y-4 mx-24 xl:mx-36">
         {universities.map((university) => (
-          <div key={university.name} class="flex text-2xl justify-between border-b border-gray-200 py-3">
+          <div key={university.name} class="flex text-2xl pl-2 justify-between border-t border-black py-3">
             <div class="text-green-600 font-extrabold">
               {university.score}
-              <span class="text-green-600 font-semibold text-xl"><br/>/{maxScore}</span>
+              <span class="text-green-600 font-semibold text-xl"><br />/{maxScore}</span>
             </div>
-            <div class="text-right">
-              <div class="text-gray-800 font-semibold">{university.name}</div>
-              <div class="text-gray-500 text-sm">({university.abbreviation})</div>
+            <div class="text-right pr-2">
+              <div class="text-[24px] md:text-[32px]">{university.name}</div>
+              <div class="text-gray-500 text-[12px] md:text-[20px]">({university.abbreviation})</div>
             </div>
           </div>
         ))}
