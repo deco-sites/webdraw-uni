@@ -56,7 +56,8 @@
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
     "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
-    "reload": "deno cache -r https://deco.cx/run"
+    "reload": "deno cache -r https://deco.cx/run",
+    "localhost": "DECO_ENV_NAME=localhost deno task start"
   },
   "githooks": {
     "pre-commit": "check"

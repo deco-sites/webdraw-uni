@@ -25,13 +25,13 @@ const Referrals: FunctionalComponent<Props> = ({
 }) => {
   return (
     <div class="max-w-full mx-16 p-8">
-      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Referrals</h2>
+      <h2 class="text-5xl font-bold mb-6 text-center text-gray-800">Referrals</h2>
       <div class="space-y-4">
         {universities.map((university) => (
-          <div key={university.name} class="flex justify-between border-b border-gray-200 py-3">
-            <div class="text-green-600 font-bold">
+          <div key={university.name} class="flex text-2xl justify-between border-b border-gray-200 py-3">
+            <div class="text-green-600 font-extrabold">
               {university.score}
-              <span class="text-green-600 font-semibold text-sm">/{maxScore}</span>
+              <span class="text-green-600 font-semibold text-xl"><br/>/{maxScore}</span>
             </div>
             <div class="text-right">
               <div class="text-gray-800 font-semibold">{university.name}</div>

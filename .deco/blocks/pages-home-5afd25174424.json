@@ -21,7 +21,8 @@
         "rightLinks": [
           {
             "label": "Discord",
-            "url": "#"
+            "url": "#",
+            "type": "Discord"
           }
         ]
       },

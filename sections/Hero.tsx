@@ -43,29 +43,33 @@ export default function HeroFlats({
   return (
     <div
       style={{
-        backgroundImage: `url("data:image/svg+xml,`,
-        backgroundRepeat: "round",
+        background: "white",
+        backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
+        backgroundSize: "30px 30px",
+        backgroundPosition: "-19px -19px",
       }}
     >
-      <nav class="container mx-auto mx-4">
+      <nav class="container mx-auto mx-4 pb-[20px]">
         <div class="flex flex-col items-center gap-8">
           <div
-            class="text-center py-36 md:pt-20 md:pb-28"
+            class="text-center py-36 md:py-32 xs:pt-56 xs:pb-34"
           >
             <div
               class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 flex flex-col items-center justify-center lg:max-w-3xl`}
             >
               <div
-                class="inline-block text-[32px] md:text-[64px] lg:text-[80px] font-semibold"
+                class="inline-block text-[64px] md:text-[96px] font-bold"
                 style={{
-                  lineHeight: 0.9
+                  lineHeight: "86.4px"
                 }}
                 dangerouslySetInnerHTML={{
                   __html: title,
                 }}
               >
               </div>
-              <p class="leading-[150%] text-accent">
+              <p style={{
+                  lineHeight: "28.8px"
+                }} class="leading-[150%] max-w-2xl text-accent">
                 {description}
               </p>
               <div class="flex items-center gap-3">
@@ -75,7 +79,7 @@ export default function HeroFlats({
                     id={item?.id}
                     href={item?.href}
                     target={item?.href.includes("http") ? "_blank" : "_self"}
-                    class={`font-bold btn btn-sm btn-primary text-white px-12 py-5 content-center ${item.outline && "btn-outline"
+                    class={`rounded-full font-bold btn btn-md btn-primary text-xl text-white px-12 py-7 content-center ${item.outline && "btn-outline"
                       }`}
                   >
                     {item?.text}

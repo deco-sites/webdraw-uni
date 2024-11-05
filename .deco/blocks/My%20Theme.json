@@ -22,5 +22,14 @@
     "tertiary": "#616B6B",
     "neutral": "#000000",
     "info": "#000000"
+  },
+  "font": {
+    "__resolveType": "website/loaders/fonts/googleFonts.ts",
+    "fonts": [
+      {
+        "variations": [],
+        "family": "Inter"
+      }
+    ]
   }
 }
