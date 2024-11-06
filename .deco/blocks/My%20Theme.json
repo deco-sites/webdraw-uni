@@ -14,7 +14,6 @@
     "--tab-border": "1px",
     "--tab-radius": "0.5rem"
   },
-  "mode": "light",
   "mainColors": {
     "base-100": "#FFFFFF",
     "primary": "#27AE6B",
@@ -27,9 +26,39 @@
     "__resolveType": "website/loaders/fonts/googleFonts.ts",
     "fonts": [
       {
-        "variations": [],
+        "variations": [
+          {
+            "weight": "100"
+          },
+          {
+            "weight": "200"
+          },
+          {
+            "weight": "300"
+          },
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "600"
+          },
+          {
+            "weight": "700"
+          },
+          {
+            "weight": "800"
+          },
+          {
+            "weight": "900",
+            "italic": false
+          }
+        ],
         "family": "Inter"
       }
     ]
-  }
+  },
+  "mode": "light"
 }

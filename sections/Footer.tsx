@@ -89,7 +89,7 @@ export default function Footer({
               alt={logo.alt}
             />
           </div>
-          <div class="flex gap-9">
+          <div class="flex gap-20 pr-12">
             {links?.map((link) => (
               <div>
                 <h4 class="font-semibold mb-4">{link.title}</h4>
@@ -105,7 +105,7 @@ export default function Footer({
             ))}
           </div>
         </div>
-        <div class="border-primary border-t flex flex-col gap-4 items-center justify-between lg:flex-row lg:items-center py-8">
+        <div class="flex flex-col gap-4 items-center justify-between lg:flex-row lg:items-center pt-8 pb-16">
           <div class="flex flex-col gap-4 items-center lg:flex-row lg:gap-6">
             <div class="flex gap-2 justify-between lg:gap-6">
               {bottomLinks?.map((item) => (

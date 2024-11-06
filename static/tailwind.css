@@ -2882,6 +2882,21 @@ details.collapse summary::-webkit-details-marker {
 .relative {
   position: relative;
 }
+.-left-20 {
+  left: -5rem;
+}
+.-left-\[20rem\] {
+  left: -20rem;
+}
+.-left-\[24rem\] {
+  left: -24rem;
+}
+.-top-16 {
+  top: -4rem;
+}
+.-top-5 {
+  top: -1.25rem;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -2893,6 +2908,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .left-4 {
   left: 1rem;
+}
+.right-0 {
+  right: 0px;
 }
 .right-1 {
   right: 0.25rem;
@@ -2909,6 +2927,9 @@ details.collapse summary::-webkit-details-marker {
 .top-2 {
   top: 0.5rem;
 }
+.top-28 {
+  top: 7rem;
+}
 .top-4 {
   top: 1rem;
 }
@@ -2917,6 +2938,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .top-\[70px\] {
   top: 70px;
+}
+.z-0 {
+  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -3371,9 +3395,6 @@ details.collapse summary::-webkit-details-marker {
 .gap-8 {
   gap: 2rem;
 }
-.gap-9 {
-  gap: 2.25rem;
-}
 .gap-\[16px\] {
   gap: 16px;
 }
@@ -3449,9 +3470,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .rounded-2xl {
   border-radius: 1rem;
-}
-.rounded-3xl {
-  border-radius: 1.5rem;
 }
 .rounded-\[16px\] {
   border-radius: 16px;
@@ -3537,10 +3555,6 @@ details.collapse summary::-webkit-details-marker {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
 }
 .border-secondary {
   --tw-border-opacity: 1;
@@ -3660,10 +3674,6 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 0px;
   padding-right: 0px;
 }
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -3720,10 +3730,6 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -3735,6 +3741,10 @@ details.collapse summary::-webkit-details-marker {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -3748,15 +3758,17 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .pb-12 {
   padding-bottom: 3rem;
 }
+.pb-16 {
+  padding-bottom: 4rem;
+}
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
 }
 .pb-24 {
   padding-bottom: 6rem;
@@ -3784,6 +3796,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pl-4 {
   padding-left: 1rem;
+}
+.pr-12 {
+  padding-right: 3rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -3843,6 +3858,10 @@ details.collapse summary::-webkit-details-marker {
   font-size: 3rem;
   line-height: 1;
 }
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -3883,9 +3902,6 @@ details.collapse summary::-webkit-details-marker {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.font-black {
-  font-weight: 900;
 }
 .font-bold {
   font-weight: 700;
@@ -4303,13 +4319,16 @@ details.collapse summary::-webkit-details-marker {
     border-radius: 9999px;
   }
 
-  .md\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .md\:pb-28 {
     padding-bottom: 7rem;
+  }
+
+  .md\:pb-\[58px\] {
+    padding-bottom: 58px;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:pt-20 {

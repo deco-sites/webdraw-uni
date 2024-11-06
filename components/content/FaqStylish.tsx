@@ -26,14 +26,14 @@ function Faq({ questions, title, titlePosition, description, cta }: Props) {
   return (
     <div
       id="faq"
-      class="flex flex-col items-center gap-4 py-16 rounded-3xl"
+      class="flex flex-col items-center gap-4 py-16 "
       style={{
         background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px"
       }}>
-      <div class="bg-[#FAFAFA] px-32 py-16 border border-[#C9CFCF]">
+      <div class="bg-[#FAFAFA] px-32 py-16 border border-[#C9CFCF] rounded-lg">
         <div class="flex flex-col items-center">
           <p class="text-4xl font-bold leading-snug">
             {title}

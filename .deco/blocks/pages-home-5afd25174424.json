@@ -13,8 +13,8 @@
             "outline": true
           },
           {
-            "href": "#",
-            "text": "Se inscrever"
+            "text": "Se inscrever",
+            "href": "/example-university"
           }
         ],
         "leftLinks": [],
@@ -32,7 +32,7 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p><span>Faça seu curso<br></span><span style=\"color: #27ae6b\">desenhar a web</span></p>",
+      "title": "<p>Faça seu curso<br><span style=\"color: rgb(39, 174, 107)\">desenhar a web</span></p>",
       "cta": [
         {
           "href": "#",
@@ -46,7 +46,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/cards.tsx",
-        "title": "COMO FUNCIONA?"
+        "title": "Como funciona?"
       }
     },
     {
