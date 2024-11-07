@@ -20,7 +20,7 @@ export function Collapse(
       <input class="hidden" type="checkbox" id={id} />
       <label htmlFor={id}>
         <div class="collapse-title min-h-0 p-0 max-sm:text-lg font-semibold text-2xl text-[#0D1717] max-sm:h-16 h-9">
-          <div class="flex items-center justify-between h-full">
+          <div class="flex items-center justify-between tracking-tighter h-full">
             <p>{title}</p>
             <label class="swap group-has-[input:checked]/collapse:swap-active swap-rotate ml-auto pointer-events-none">
               <Icon
@@ -39,7 +39,7 @@ export function Collapse(
           </div>
         </div>
       </label>
-      <div class="collapse-content !p-0 font-normal text-base text-[#616B6B]">
+      <div class="collapse-content !p-0 font-normal tracking-tighter text-base text-[#616B6B]">
         {children}
       </div>
     </div>

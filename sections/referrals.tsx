@@ -50,7 +50,7 @@ const Referrals: FunctionalComponent<Props> = ({
       class="max-w-full p-8"
     >
       <div class="flex items-center flex-col pb-4">
-        <h2 class="text-6xl font-bold mb-6 text-center text-gray-800">
+        <h2 class="text-6xl font-bold mb-6 text-center tracking-tighter text-gray-800">
           Referrals
         </h2>
         <svg
@@ -73,11 +73,11 @@ const Referrals: FunctionalComponent<Props> = ({
         {universities.map((university) => (
           <div
             key={university.name}
-            class="flex text-2xl pl-2 justify-between border-t border-black py-3"
+            class="flex text-2xl pl-2 justify-between tracking-tighter border-t border-black py-3"
           >
-            <div class="text-green-600 font-extrabold">
+            <div class="text-green-600 tracking-tighter font-extrabold">
               {university.score}
-              <span class="text-green-600 font-semibold text-xl">
+              <span class="text-green-600 tracking-tighter font-semibold text-xl">
                 <br />/{maxScore}
               </span>
             </div>

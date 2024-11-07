@@ -35,10 +35,10 @@ function Faq({ questions, title, titlePosition, description, cta }: Props) {
       }}>
       <div class="bg-[#FAFAFA] px-32 py-16 border border-[#C9CFCF] rounded-lg">
         <div class="flex flex-col items-center">
-          <p class="text-4xl font-bold leading-snug">
+          <p class="text-4xl tracking-tighter font-bold leading-snug">
             {title}
           </p>
-          <p class="text-accent text-md py-4">
+          <p class="text-accent tracking-tighter text-md py-4">
             {description}
           </p>
         </div>

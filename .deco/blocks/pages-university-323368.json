@@ -68,7 +68,8 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Prizes.tsx"
+        "__resolveType": "site/sections/Prizes.tsx",
+        "title": "<p><span>Compartilhe mais<br>e </span><span style=\"color: #27ae6b\">ganhe prêmios</span></p>"
       }
     },
     {

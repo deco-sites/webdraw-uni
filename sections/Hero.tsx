@@ -182,7 +182,7 @@ export default function HeroFlats({
               class={`mx-6 lg:mx-auto lg:w-full gap-6 flex flex-col items-center justify-center lg:max-w-3xl pt-12`}
             >
               <div class="relative">
-                <div class="absolute top-28 -left-[24rem] z-0">
+                <div class="absolute top-28 -left-[23rem] z-0">
                   <svg
                     width="454"
                     height="98"
@@ -202,7 +202,7 @@ export default function HeroFlats({
               </div>
 
               <div
-                class="inline-block text-[64px] md:text-[96px] font-bold z-10"
+                class="inline-block text-[64px] md:text-[96px] font-bold z-10 tracking-tighter"
                 style={{
                   lineHeight: "86.4px",
                 }}
@@ -214,7 +214,7 @@ export default function HeroFlats({
                 style={{
                   lineHeight: "28.8px",
                 }}
-                class="leading-[150%] max-w-2xl text-xl text-accent"
+                class="leading-[150%] max-w-2xl text-xl text-accent tracking-tighter"
               >
                 {description}
               </p>
@@ -282,7 +282,7 @@ export default function HeroFlats({
                     id={item?.id}
                     href={item?.href}
                     target={item?.href.includes("http") ? "_blank" : "_self"}
-                    class={`rounded-full font-bold btn btn-md btn-primary text-xl text-white px-6 py-7 content-center ${
+                    class={`rounded-full tracking-tighter btn btn-md btn-primary text-xl text-white px-6 py-7 content-center ${
                       item.outline && "btn-outline"
                     }`}
                   >

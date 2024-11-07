@@ -81,7 +81,7 @@ export default function Header({
                     <a
                       href={link.url}
                       aria-label={link.label}
-                      class="link text-sm font-medium no-underline hover:underline py-3 pr-3 pl-2"
+                      class="link text-sm font-medium tracking-tighter no-underline hover:underline py-3 pr-3 pl-2"
                     >
                       {link.label}
                     </a>
@@ -99,7 +99,7 @@ export default function Header({
                       id={item.id}
                       href={item.href}
                       target={item.href.includes("http") ? "_blank" : "_self"}
-                      class={`rounded-full font-bold btn px-4 ${item.outline ? "bg-white" : "btn-primary text-white"}`}
+                      class={`rounded-full font-bold tracking-tighter btn px-4 ${item.outline ? "bg-white" : "btn-primary text-white"}`}
                     >
                       {item.text}
                     </a>

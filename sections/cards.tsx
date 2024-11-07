@@ -72,7 +72,7 @@ export default function BlogPosts({
           style={{ width: "fit-content" }}
           class="flex flex-col text-left items-center justify-center justify-between p-12 gap-x-6"
         >
-          <p class="pl-4 pb-4 text-5xl font-bold w-full">{title}</p>
+          <p class="pl-4 pb-4 text-5xl font-bold w-full tracking-tighter">{title}</p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2 p-4">
             {(cards || []).map((card) => (
               <div class="bg-white border border-[#C9CFCF] rounded-lg px-8 pt-12 pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
@@ -208,8 +208,8 @@ export default function BlogPosts({
                 </svg>)}
                 </div>
                 <div class="p-6 space-y-4">
-                  <p class="text-4xl font-bold">{card.title}</p>
-                  <p class="text-base w-64">{card.description}</p>
+                  <p class="text-4xl font-bold tracking-tighter">{card.title}</p>
+                  <p class="text-accent w-64 tracking-tighter">{card.description}</p>
                 </div>
               </div>
             ))}
