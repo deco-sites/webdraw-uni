@@ -66,7 +66,7 @@ export default function HeroFlats({
             >
               <div class="flex flex-row items-center">
                 <div class="relative">
-                  <div class="absolute -left-[20rem]">
+                  <div class="absolute -top-[10rem] lg:-left-[20rem]">
                     <svg
                       width="128"
                       height="56"
@@ -225,7 +225,7 @@ export default function HeroFlats({
                   </button>
                 </div>
                 <div class="relative">
-                  <div class="absolute left-5 top-3">
+                  <div class="absolute -right-[35px] top-[15rem] lg:left-5 lg:top-3 rotate-[41deg]">
                     <svg
                       width="345"
                       height="123"
