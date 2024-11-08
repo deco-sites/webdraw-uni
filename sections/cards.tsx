@@ -37,7 +37,7 @@ export default function BlogPosts({
 }: Props) {
   return (
     <div
-      class="flex flex-col items-center px-8 py-40"
+      class="flex flex-col items-center px-3 sm:px-8 py-40"
       style={{
         background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
@@ -46,7 +46,7 @@ export default function BlogPosts({
       }}
     >
       <div class="relative w-full z-10">
-        <div class="absolute -left-20 -top-16">
+        <div class="absolute -left-40 -top-16 md:-left-36 md:-top-20 lg:-left-20 lg:-top-16">
           <svg
             width="350"
             height="299"
@@ -66,16 +66,16 @@ export default function BlogPosts({
 
       <div
         style={{ width: "fit-content" }}
-        class="px-16 sm:px-2 bg-[#FAFAFA] rounded-lg m-8 z-0"
+        class="sm:px-2 bg-[#FAFAFA] rounded-lg m-8 z-0"
       >
         <div
           style={{ width: "fit-content" }}
-          class="flex flex-col text-left items-center justify-center justify-between p-12 gap-x-6"
+          class="flex flex-col text-left items-center justify-center justify-between md:py-6 lg:p-12 gap-x-6"
         >
-          <p class="pl-4 pb-4 text-5xl font-bold w-full tracking-tighter">{title}</p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 p-4">
+          <p class="pl-4 py-4 text-5xl font-bold w-full tracking-tighter">{title}</p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 py-4 px-4 sm:p-4">
             {(cards || []).map((card) => (
-              <div class="bg-white border border-[#C9CFCF] rounded-lg px-8 pt-12 pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
+              <div class="bg-white border border-[#C9CFCF] rounded-lg px-8 md:pt-6 md:pb-12 lg:pt-12 lg:pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
                 <div class="px-6 pt-6 pb-2 space-y-4">
                   {card.icon === "Register" && (
                     <svg
@@ -209,7 +209,7 @@ export default function BlogPosts({
                 </div>
                 <div class="p-6 space-y-4">
                   <p class="text-4xl font-bold tracking-tighter">{card.title}</p>
-                  <p class="text-accent w-64 tracking-tighter">{card.description}</p>
+                  <p class="text-accent max-w-64 tracking-tighter">{card.description}</p>
                 </div>
               </div>
             ))}

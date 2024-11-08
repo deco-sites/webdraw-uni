@@ -69,7 +69,7 @@ const Referrals: FunctionalComponent<Props> = ({
         </svg>
       </div>
 
-      <div class="space-y-4 mx-24 xl:mx-36">
+      <div class="space-y-4 md:px-8 lg:mx-24 xl:mx-36">
         {universities.map((university) => (
           <div
             key={university.name}

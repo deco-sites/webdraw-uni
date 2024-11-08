@@ -47,7 +47,7 @@ export default function HeroFlats({
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px",
       }}
-      class="pt-12 pb-20"
+      class="md:px-0 lg:pt-12 lg:pb-20 pb-16"
     >
       <div class="relative w-full">
         <div class="absolute top-0 left-0">
@@ -177,13 +177,23 @@ export default function HeroFlats({
       </div>
       <nav class="container mx-auto mx-4 pb-[20px]">
         <div class="flex flex-col items-center">
-          <div class="text-center py-36 md:pt-0 md:pb-[58px] xs:pt-56 xs:pb-34">
+          <div class="text-center pt-16 md:pt-16 md:pb-28 lg:py-12 xs:pt-56 xs:pb-34">
             <div
               class={`mx-6 lg:mx-auto lg:w-full gap-6 flex flex-col items-center justify-center lg:max-w-3xl pt-12`}
             >
+              <div
+                class="inline-block text-[64px] md:text-[96px] font-bold z-10 tracking-tighter"
+                style={{
+                  lineHeight: "86.4px",
+                }}
+                dangerouslySetInnerHTML={{
+                  __html: title,
+                }}
+              ></div>
               <div class="relative">
-                <div class="absolute top-28 -left-[23rem] z-0">
+                <div class="absolute bottom-3 -left-[23rem] z-0">
                   <svg
+                    class="width"
                     width="454"
                     height="98"
                     viewBox="0 0 454 98"
@@ -200,16 +210,6 @@ export default function HeroFlats({
                   </svg>
                 </div>
               </div>
-
-              <div
-                class="inline-block text-[64px] md:text-[96px] font-bold z-10 tracking-tighter"
-                style={{
-                  lineHeight: "86.4px",
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: title,
-                }}
-              ></div>
               <p
                 style={{
                   lineHeight: "28.8px",
@@ -218,9 +218,9 @@ export default function HeroFlats({
               >
                 {description}
               </p>
-              <div class="flex items-start gap-3 pt-6">
+              <div class="flex items-start justify-center gap-3 pt-6">
                 <div class="relative w-full">
-                  <div class="absolute -left-[20rem] -top-5">
+                  <div class="absolute top-20 -rotate-[20deg] sm:-left-[10rem] sm:top-16 sm:-rotate-12 lg:-left-[20rem] lg:-top-5 lg:rotate-0">
                     <svg
                       width="309"
                       height="123"
@@ -282,7 +282,7 @@ export default function HeroFlats({
                     id={item?.id}
                     href={item?.href}
                     target={item?.href.includes("http") ? "_blank" : "_self"}
-                    class={`rounded-full tracking-tighter btn btn-md btn-primary text-xl text-white px-6 py-7 content-center ${
+                    class={`flex rounded-full tracking-tighter w-[100%] btn btn-md btn-primary text-xl text-white px-6 py-7 content-center ${
                       item.outline && "btn-outline"
                     }`}
                   >
@@ -293,7 +293,7 @@ export default function HeroFlats({
             </div>
           </div>
           <div class="relative flex w-full justify-end">
-            <div class="absolute">
+            <div class="absolute -bottom-[10rem] right-0">
             <svg
               width="128"
               height="56"

@@ -89,7 +89,7 @@ export default function Footer({
               alt={logo.alt}
             />
           </div>
-          <div class="flex gap-20 pr-12">
+          <div class="flex gap-6 md:gap-20 lg:pr-12">
             {links?.map((link) => (
               <div>
                 <h4 class="font-semibold mb-4">{link.title}</h4>

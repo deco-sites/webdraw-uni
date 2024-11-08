@@ -2882,11 +2882,14 @@ details.collapse summary::-webkit-details-marker {
 .relative {
   position: relative;
 }
-.-left-20 {
-  left: -5rem;
+.-bottom-\[10rem\] {
+  bottom: -10rem;
 }
 .-left-4 {
   left: -1rem;
+}
+.-left-40 {
+  left: -10rem;
 }
 .-left-\[20rem\] {
   left: -20rem;
@@ -2900,11 +2903,11 @@ details.collapse summary::-webkit-details-marker {
 .-top-4 {
   top: -1rem;
 }
-.-top-5 {
-  top: -1.25rem;
-}
 .bottom-0 {
   bottom: 0px;
+}
+.bottom-3 {
+  bottom: 0.75rem;
 }
 .left-0 {
   left: 0px;
@@ -2930,8 +2933,8 @@ details.collapse summary::-webkit-details-marker {
 .top-1\/2 {
   top: 50%;
 }
-.top-28 {
-  top: 7rem;
+.top-20 {
+  top: 5rem;
 }
 .top-3 {
   top: 0.75rem;
@@ -2980,10 +2983,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .m-8 {
   margin: 2rem;
-}
-.mx-24 {
-  margin-left: 6rem;
-  margin-right: 6rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -3158,11 +3157,11 @@ details.collapse summary::-webkit-details-marker {
 .w-2 {
   width: 0.5rem;
 }
-.w-64 {
-  width: 16rem;
-}
 .w-80 {
   width: 20rem;
+}
+.w-\[100\%\] {
+  width: 100%;
 }
 .w-\[10px\] {
   width: 10px;
@@ -3224,6 +3223,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-4xl {
   max-width: 56rem;
+}
+.max-w-64 {
+  max-width: 16rem;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -3301,6 +3303,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .-translate-y-2 {
   --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-rotate-\[20deg\] {
+  --tw-rotate: -20deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-180 {
@@ -3682,9 +3688,9 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -3733,10 +3739,6 @@ details.collapse summary::-webkit-details-marker {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -3800,9 +3802,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pl-4 {
   padding-left: 1rem;
-}
-.pr-12 {
-  padding-right: 3rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -4236,6 +4235,14 @@ details.collapse summary::-webkit-details-marker {
 }
 @media (min-width: 640px) {
 
+  .sm\:-left-\[10rem\] {
+    left: -10rem;
+  }
+
+  .sm\:top-16 {
+    top: 4rem;
+  }
+
   .sm\:h-\[273px\] {
     height: 273px;
   }
@@ -4264,6 +4271,11 @@ details.collapse summary::-webkit-details-marker {
     max-width: 488px;
   }
 
+  .sm\:-rotate-12 {
+    --tw-rotate: -12deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4276,9 +4288,18 @@ details.collapse summary::-webkit-details-marker {
     flex-wrap: wrap;
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-\[20px\] {
@@ -4290,6 +4311,14 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 @media (min-width: 768px) {
+
+  .md\:-left-36 {
+    left: -9rem;
+  }
+
+  .md\:-top-20 {
+    top: -5rem;
+  }
 
   .md\:w-1\/2 {
     width: 50%;
@@ -4305,6 +4334,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -4333,20 +4366,44 @@ details.collapse summary::-webkit-details-marker {
     border-radius: 9999px;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
   .md\:pb-28 {
     padding-bottom: 7rem;
   }
 
-  .md\:pb-\[58px\] {
-    padding-bottom: 58px;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .md\:text-\[20px\] {
@@ -4380,6 +4437,27 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:-left-20 {
+    left: -5rem;
+  }
+
+  .lg\:-left-\[20rem\] {
+    left: -20rem;
+  }
+
+  .lg\:-top-16 {
+    top: -4rem;
+  }
+
+  .lg\:-top-5 {
+    top: -1.25rem;
+  }
+
+  .lg\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 
   .lg\:mx-auto {
     margin-left: auto;
@@ -4418,6 +4496,11 @@ details.collapse summary::-webkit-details-marker {
     flex: 100px;
   }
 
+  .lg\:rotate-0 {
+    --tw-rotate: 0deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4446,9 +4529,28 @@ details.collapse summary::-webkit-details-marker {
     gap: 1.5rem;
   }
 
+  .lg\:p-12 {
+    padding: 3rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:py-14 {
@@ -4465,8 +4567,24 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .lg\:pb-28 {
     padding-bottom: 7rem;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:pt-28 {
