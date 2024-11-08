@@ -35,7 +35,7 @@
       "title": "<p>Faça seu curso<br><span style=\"color: rgb(39, 174, 107)\">desenhar a web</span></p>",
       "cta": [
         {
-          "href": "#",
+          "href": "/example-university",
           "text": "Se inscrever com e-mail do seu curso"
         }
       ],
