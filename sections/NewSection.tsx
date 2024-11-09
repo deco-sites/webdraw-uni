@@ -14,41 +14,40 @@ export default function ReferralSection({
   return (
     <div
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px",
       }}
       class="flex items-center flex-col pb-4"
     >
-      <div class="bg-[#FAFAFA] border border-[#C9CFCF] p-6 rounded-lg shadow-md max-w-4xl px-16 pt-16 pb-24">
+      <div class="bg-neutral border border-info p-6 rounded-lg shadow-md max-w-4xl px-16 pt-16 pb-24">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Card de Pontuação */}
-          <div class="bg-white border border-[#C9CFCF] hover:border-[#76CAD0] rounded-lg p-12">
-            <h2 class="text-green-600 border-b pb-4 border-[#C9CFCF] transition duration-300 hover:border[#76CAD0] text-3xl font-bold tracking-tighter mb-1">
+          <div class="bg-base-100 border border-info hover:border-[#76CAD0] rounded-lg p-12">
+            <h2 class="text-green-600 border-b pb-4 border-info transition duration-300 hover:border[#76CAD0] text-3xl font-bold tracking-tighter mb-1">
               {score}
-              <span class="text-gray-400 text-xl tracking-tighter">
+              <span class="text-primary font-light text-3xl tracking-tighter">
                 /{total}
               </span>
             </h2>
-            <h3 class="text-2xl pt-4 font-bold text-gray-800 mb-2 tracking-tighter">
+            <h3 class="text-2xl pt-4 font-bold text-secondary mb-2 tracking-tighter">
               {university}
             </h3>
-            <p class="text-gray-500 text-sm tracking-tighter">
+            <p class="text-secondary text-sm tracking-tighter">
               Com 500 sign-ups, seu curso desbloqueia um ano de acesso grátis!
               grátis!
             </p>
           </div>
 
           {/* Card de Referências */}
-          <div class="bg-white border border-[#C9CFCF] hover:border-[#76CAD0] rounded-lg p-12">
-            <h2 class="text-green-600 border-b pb-4 text-3xl font-bold mb-1 tracking-tighter">
+          <div class="bg-base-100 border border-info hover:border-[#76CAD0] rounded-lg p-12">
+            <h2 class="text-green-600 border-b border-info pb-4 text-3xl font-bold mb-1 tracking-tighter">
               {referralCount.toString().padStart(2, "0")}
             </h2>
-            <h3 class="text-2xl pt-4 font-bold text-gray-800 tracking-tighter mb-2">
+            <h3 class="text-2xl pt-4 font-bold text-secondary tracking-tighter mb-2">
               Your Referrals
             </h3>
-            <p class="text-gray-500 text-sm tracking-tighter">
+            <p class="text-secondary text-sm tracking-tighter">
               Pessoas que se cadastraram através do seu link. Compartilhe mais
               para ganhar prêmios.
             </p>

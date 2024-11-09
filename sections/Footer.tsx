@@ -92,10 +92,10 @@ export default function Footer({
           <div class="flex gap-6 md:gap-20 lg:pr-12">
             {links?.map((link) => (
               <div>
-                <h4 class="font-semibold mb-4">{link.title}</h4>
+                <h4 class="font-semibold mb-4 text-info">{link.title}</h4>
                 {link.items?.map((item) => (
                   <a
-                    class="block hover:underline link tracking-tighter no-underline py-1"
+                    class="block hover:underline link tracking-tighter no-underline text-info py-1"
                     href={item.href}
                   >
                     {item.label}
@@ -109,7 +109,7 @@ export default function Footer({
           <div class="flex flex-col gap-4 items-center lg:flex-row lg:gap-6">
             <div class="flex gap-2 justify-between lg:gap-6">
               {bottomLinks?.map((item) => (
-                <a class="link tracking-tighter" href={item.href} target="_blank">
+                <a class="link tracking-tighter text-info" href={item.href} target="_blank">
                   {item.label}
                 </a>
               ))}

@@ -9,17 +9,16 @@ export interface Props {
 }
 
 export function Collapse(
-  { title, children, backgroundColor = "white" }: Props,
+  { title, children }: Props,
 ) {
   const id = useId();
   return (
     <div
-      class="collapse px-6 py-5 border border-[#C9CFCF] group/collapse max-w-[768px]"
-      style={{ backgroundColor }}
+      class="bg-base-100 collapse px-6 py-5 border border-info group/collapse max-w-[768px]"
     >
       <input class="hidden" type="checkbox" id={id} />
       <label htmlFor={id}>
-        <div class="collapse-title min-h-0 p-0 max-sm:text-lg font-semibold text-2xl text-[#0D1717] max-sm:h-16 h-9">
+        <div class="collapse-title min-h-0 p-0 max-sm:text-lg font-semibold text-2xl text-secondary max-sm:h-16 h-9">
           <div class="flex items-center justify-between tracking-tighter h-full">
             <p>{title}</p>
             <label class="swap group-has-[input:checked]/collapse:swap-active swap-rotate ml-auto pointer-events-none">
@@ -27,19 +26,19 @@ export function Collapse(
                 id="Plus2"
                 width={24}
                 height={24}
-                class="swap-off text-[#0D1717]"
+                class="swap-off text-primary"
               />
               <Icon
                 id="Close"
                 width={22}
                 height={22}
-                class="swap-on text-[#0D1717]"
+                class="swap-on text-primary"
               />
             </label>
           </div>
         </div>
       </label>
-      <div class="collapse-content !p-0 font-normal tracking-tighter text-base text-[#616B6B]">
+      <div class="collapse-content !p-0 font-normal tracking-tighter text-secondary">
         {children}
       </div>
     </div>

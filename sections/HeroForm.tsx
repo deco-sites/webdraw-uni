@@ -51,7 +51,6 @@ export default function HeroFlats({
   return (
     <div
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px",
@@ -204,8 +203,8 @@ export default function HeroFlats({
 
               <p class="leading-[150%] text-accent tracking-tighter">{description}</p>
               <div class="flex flex-row">
-                <div class="flex items-center space-x-3 bg-white rounded-full shadow-md p-4 px-6 mb-4">
-                  <span class="text-gray-600 truncate tracking-tighter">{shareLink}</span>
+                <div class="flex items-center space-x-3 bg-base-100 border-2 border-neutral rounded-full shadow-md p-4 px-6 mb-4">
+                  <span class="truncate tracking-tighter">{shareLink}</span>
                   <button
                     onClick={() => navigator.clipboard.writeText(shareLink)}
                     class="bg-green-500 text-white p-2 rounded-full focus:outline-none"
@@ -225,7 +224,7 @@ export default function HeroFlats({
                   </button>
                 </div>
                 <div class="relative">
-                  <div class="absolute -right-[35px] top-[15rem] lg:left-5 lg:top-3 rotate-[41deg]">
+                  <div class="absolute -right-[8rem] -bottom-[17rem] sm:-right-[8rem] md:-right-16rem md:-bottom-12rem lg:left-5 lg:top-3 rotate-[41deg] lg:rotate-0 ">
                     <svg
                       width="345"
                       height="123"
@@ -284,7 +283,7 @@ export default function HeroFlats({
               </div>
               <div class="flex gap-3">
                 {social?.map((item) => (
-                  <a class="p-2 rounded-full bg-[#616B6B]" href={item.href} target="_blank">
+                  <a class="p-2 rounded-full bg-accent" href={item.href} target="_blank">
                     {item.network == "Facebook" && (
                       <svg
                         width="24"

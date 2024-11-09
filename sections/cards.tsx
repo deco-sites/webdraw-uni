@@ -39,13 +39,12 @@ export default function BlogPosts({
     <div
       class="flex flex-col items-center px-3 sm:px-8 py-40"
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px",
       }}
     >
-      <div class="relative w-full z-10">
+      <div class="relative w-full z-10 bg-base">
         <div class="absolute -left-40 -top-16 md:-left-36 md:-top-20 lg:-left-20 lg:-top-16">
           <svg
             width="350"
@@ -66,7 +65,7 @@ export default function BlogPosts({
 
       <div
         style={{ width: "fit-content" }}
-        class="sm:px-2 bg-[#FAFAFA] rounded-lg m-8 z-0"
+        class="sm:px-2 bg-neutral border border-info rounded-lg m-8 z-0"
       >
         <div
           style={{ width: "fit-content" }}
@@ -75,7 +74,7 @@ export default function BlogPosts({
           <p class="pl-4 py-4 text-5xl font-bold w-full tracking-tighter">{title}</p>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 py-4 px-4 sm:p-4">
             {(cards || []).map((card) => (
-              <div class="bg-white border border-[#C9CFCF] rounded-lg px-8 md:pt-6 md:pb-12 lg:pt-12 lg:pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
+              <div class="bg-base-100 border border-info rounded-lg px-8 md:pt-6 md:pb-12 lg:pt-12 lg:pb-24 transition duration-300 hover:scale-95 hover:rotate-[-3deg]">
                 <div class="px-6 pt-6 pb-2 space-y-4">
                   {card.icon === "Register" && (
                     <svg

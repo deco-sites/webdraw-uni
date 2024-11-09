@@ -28,12 +28,11 @@ function Faq({ questions, title, titlePosition, description, cta }: Props) {
       id="faq"
       class="flex flex-col items-center gap-4 py-16 md:px-16 lg:px-0"
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px"
       }}>
-      <div class="bg-[#FAFAFA] md:px-8 lg:px-32 py-16 border border-[#C9CFCF] rounded-lg">
+      <div class="bg-neutral/50 md:px-8 lg:px-32 py-16 border border-info rounded-lg">
         <div class="flex flex-col items-center">
           <p class="text-4xl tracking-tighter font-bold leading-snug">
             {title}
@@ -56,7 +55,7 @@ function Faq({ questions, title, titlePosition, description, cta }: Props) {
               >
                 <Collapse title={title}>
                   <div
-                    class="mt-4 text-gray-800 leading-relaxed"
+                    class="mt-4 text-secondary leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: answer }}
                   />
                 </Collapse>

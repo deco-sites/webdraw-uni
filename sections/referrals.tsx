@@ -42,15 +42,14 @@ const Referrals: FunctionalComponent<Props> = ({
   return (
     <div
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px 0px",
       }}
       class="max-w-full p-8"
     >
-      <div class="flex items-center flex-col pb-4">
-        <h2 class="text-6xl font-bold mb-6 text-center tracking-tighter text-gray-800">
+      <div class="flex items-center flex-col pb-4 bg-base">
+        <h2 class="text-6xl font-bold mb-6 text-center tracking-tighter text-secondary">
           Referrals
         </h2>
         <svg
@@ -73,7 +72,7 @@ const Referrals: FunctionalComponent<Props> = ({
         {universities.map((university) => (
           <div
             key={university.name}
-            class="flex text-2xl pl-2 justify-between tracking-tighter border-t border-black py-3"
+            class="flex text-2xl pl-2 justify-between tracking-tighter border-t border-secondary py-3"
           >
             <div class="text-green-600 tracking-tighter font-extrabold">
               {university.score}

@@ -53,12 +53,11 @@ export default function PrizeGrid({
   return (
     <div
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px",
       }}
-      class="flex flex-col justify-center items-center bg-white py-32 px-20"
+      class="flex flex-col justify-center items-cente py-32 px-20"
     >
       <div
         class="inline-block text-[16px] md:text-[48px] lg:text-[64px] font-semibold tracking-tighter"
@@ -73,7 +72,7 @@ export default function PrizeGrid({
         {prizes.map((prize, index) => (
           <div
             key={index}
-            class="relative border border-gray-200 rounded-lg p-4 shadow hover:shadow-lg bg-[#FAFAFA] border border-[#C9CFCF]"
+            class="relative bg-neutral border border-info rounded-lg p-4 shadow hover:shadow-lg"
           >
             {prize.isUnlocked && (
               <div class="relative">
@@ -104,10 +103,10 @@ export default function PrizeGrid({
               alt={prize.title}
               class="w-full h-40 object-cover mb-4 rounded-md"
             />
-            <h2 class="text-green-600 font-semibold text-lg mb-1">
+            <h2 class="text-primary font-semibold text-lg mb-1">
               {prize.referralsRequired} referrals
             </h2>
-            <p class="text-gray-800 font-bold text-md">{prize.title}</p>
+            <p class="text-secondary font-bold text-md">{prize.title}</p>
           </div>
         ))}
       </div>

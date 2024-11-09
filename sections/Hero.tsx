@@ -42,12 +42,11 @@ export default function HeroFlats({
   return (
     <div
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px -19px",
       }}
-      class="md:px-0 lg:pt-12 lg:pb-20 pb-16"
+      class="md:px-0 lg:pt-12 lg:pb-20 pb-16 bg-base"
     >
       <div class="relative w-full">
         <div class="absolute top-0 left-0">

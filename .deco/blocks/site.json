@@ -13,6 +13,12 @@
   "global": [
     {
       "__resolveType": "htmx/sections/htmx.tsx"
+    },
+    {
+      "__resolveType": "My Theme"
+    },
+    {
+      "__resolveType": "dark mode"
     }
   ],
   "routes": [
@@ -28,6 +34,15 @@
   },
   "__resolveType": "site/apps/site.ts",
   "firstByteThresholdMS": false,
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
+  },
   "theme": {
     "__resolveType": "My Theme"
   }

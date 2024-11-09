@@ -1,6 +1,5 @@
 {
   "__resolveType": "site/sections/Theme/Theme.tsx",
-  "colorScheme": "light",
   "buttonStyle": {
     "--border-btn": "1px",
     "--rounded-btn": "0.2rem",
@@ -13,14 +12,6 @@
     "--animation-input": "0.2s",
     "--tab-border": "1px",
     "--tab-radius": "0.5rem"
-  },
-  "mainColors": {
-    "base-100": "#ffffff",
-    "primary": "#27AE6B",
-    "secondary": "#162121",
-    "tertiary": "#616B6B",
-    "neutral": "#FAFAFAa",
-    "info": "#113032"
   },
   "font": {
     "__resolveType": "website/loaders/fonts/googleFonts.ts",
@@ -60,9 +51,15 @@
       }
     ]
   },
+  "mainColors": {
+    "base-100": "#0D1717",
+    "primary": "#27AE6B",
+    "secondary": "#E4E7E7",
+    "tertiary": "#AFB6B6",
+    "neutral": "#16212180",
+    "info": "#303D3D",
+    "success": "#000000"
+  },
   "mode": "light",
-  "complementaryColors": {
-    "info-content": "#113032",
-    "base-content": "#113032"
-  }
+  "colorScheme": "dark"
 }

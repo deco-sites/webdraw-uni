@@ -48,12 +48,11 @@ export default function Header({
   return (
     <div
       style={{
-        background: "white",
         backgroundImage: "radial-gradient(#C9CFCF 1.5px, transparent 0)",
         backgroundSize: "30px 30px",
         backgroundPosition: "-19px 15px",
       }}
-      class="drawer drawer-end">
+      class="drawer drawer-end bg-base">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
       {/* main content */}
